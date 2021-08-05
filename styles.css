@@ -13,20 +13,20 @@ body {
 header {
     padding-left: 1.5%;
     padding-right: 1.5%;
-    border:solid;
-    border-radius: 10px;
 }
 
 .heading {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 72px;
 }
 
 #container {
     margin-top: 2%;
+    margin-bottom: 2%;
     display: grid;
     width: 750px;
     height: 750px;
-    border: solid black;
+    border: solid black 2px;
     background-color: white;
     grid-gap: 0px;
     grid-template-rows: repeat(var(--grid-rows), 1fr);
@@ -37,5 +37,17 @@ header {
     background-color: white;
     margin: 0px;
     padding: 0px;
-    border: 1px solid black;
+}
+
+.user-input{
+    width: 750px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-button {
+    width: 150px;
+    height: 50px;
+    border-style: solid black;
+    border-radius: 10px;
 }
