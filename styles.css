@@ -1,3 +1,41 @@
-.container {
+:root {
+    --grid-columns: 16;
+    --grid-rows: 16;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightblue;
+}
+
+header {
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    border:solid;
+    border-radius: 10px;
+}
+
+.heading {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#container {
+    margin-top: 2%;
     display: grid;
+    width: 750px;
+    height: 750px;
+    border: solid black;
+    background-color: white;
+    grid-gap: 0px;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-columns), 1fr);
+}
+
+.grid-square {
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid black;
 }
